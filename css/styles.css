@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Karla|Raleway');
 
 * {
 	box-sizing: border-box;
@@ -7,13 +8,13 @@
 
 body {
 	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 115%;
+	font-family: 'Karla', sans-serif;
+    	font-size: 115%;
 	text-align: center;
 }
 
 h1, h2, h3, h4, h5, .address, .amount {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
@@ -45,14 +46,6 @@ img {
     width:80%;
 }
 
-#logo {
-    width: 200px;
-    height: 200px;
-}
-
-/*h1 a {
-    all: inherit;
-}*/
 
 a {
     all: inherit;
@@ -129,8 +122,8 @@ pre {
 .faq-q {
     font-weight: bold;
     margin-bottom: 1em;
-    display: list-item;          /* This has to be "list-item"                                               */
-    list-style-type: square;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    display: list-item;          
+    list-style-type: square;      
     list-style-position: inside;
 }
 
@@ -386,7 +379,7 @@ input[type="submit"]:hover, button:hover {
 
 /*CONTACT*/
 #contact {
-  background-color: black;
+  background-color:#1d1d1d;
   height: auto;
   color: white;
   margin-bottom: 0px;
