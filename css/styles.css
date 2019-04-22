@@ -393,6 +393,14 @@ input[type="submit"]:hover, button:hover {
   color: black;
 }
 
+@media (max-width: 600px) {
+	#contact a {
+  		color: white;
+  		cursor: pointer;
+  		font-size: 17px;
+	}
+
+}
 
 
 valign-wrapper {
