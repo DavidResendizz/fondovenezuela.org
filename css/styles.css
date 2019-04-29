@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Karla|Raleway');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 	transition: all ease-in-out 250ms;
@@ -9,7 +13,7 @@
 body {
 	margin: 0;
 	font-family: 'Karla', sans-serif;
-    	font-size: 115%;
+    font-size: 115%;
 	text-align: center;
 }
 
@@ -45,6 +49,12 @@ img {
     max-width: 700px;
     width:80%;
 }
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
 
 
 a {
@@ -122,8 +132,8 @@ pre {
 .faq-q {
     font-weight: bold;
     margin-bottom: 1em;
-    display: list-item;          
-    list-style-type: square;      
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: square;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     list-style-position: inside;
 }
 
@@ -163,104 +173,43 @@ pre {
   margin: 0 auto;
 }
 
-#contacto-form {
-  max-width: 1208px;
-  max-width: 75.5rem;
-  margin: 0 auto;
-}
+/* buttons */
 
-#contacto, label, input[name="submit"] {
-  position: relative;
-}
-label > span, input, textarea, button {
-  box-sizing: border-box;
-}
-label {
-  display: block;
-}
-label > span {
-  display: none;
-}
-input, textarea, button {
-  width: 100%;
-  padding: 0.5em;
+.button {
+  background-color: #6989e9;
   border: none;
-  font: 300 100%/1.2 Ubuntu, sans-serif;
-}
-input[type="text"], input[type="email"], textarea {
-  margin: 0 0 1em;
-  border: 1px solid #ccc;
-  outline: none;
-}
-input.invalid, textarea.invalid {
-  border-color: #d5144d;
-}
-textarea {
-  height: 6em;
-}
-input[type="submit"], button {
-  background: #a7cd80;
-  color: #333;
-}
-input[type="submit"]:hover, button:hover {
-  background: #91b36f;
-}
-@media screen and (min-width: 30em) {
-  #contacto-form h2 {
-    margin-left: 26.3736%;
-    font-size: 2em;
-    line-height: 1.5;
-  }
-  label > span {
-    vertical-align: top;
-    display: inline-block;
-    width: 26.3736%;
-    padding: 0.5em;
-    border: 1px solid transparent;
-    text-align: right;
-  }
-  input, textarea, button {
-    width: 73.6263%;
-    line-height: 1.5;
-  }
-  textarea {
-    height: 10em;
-  }
-  input[type="submit"], button {
-    margin-left: 26.3736%;
-  }
-}
-@media screen and (min-width: 48em) {
-  #contacto-form {
-    text-align: justify;
-    line-height: 0;
-  }
-  #contacto-form:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
-  #contacto-form h2 {
-    margin-left: 17.2661%;
-  }
-  #contacto-form form, #contacto-form aside {
-    vertical-align: top;
-    display: inline-block;
-    width: 65.4676%;
-    text-align: left;
-    line-height: 1.5;
-  }
-  #contacto-form aside {
-    width: 30.9353%;
-  }
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 35%;
+  margin-right: 35%;
+  cursor: pointer;
+  align-content: center;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
 }
 
+@media (max-width: 600px) {
+	.button {
+  		margin-left: 15%;
+  		margin-right: 15%;
+	}
 
+}
 
-
-
-
-
+.button a {
+    all: inherit;
+    cursor: pointer;
+    display: ;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
 
 /* hero-home
 =================== */
@@ -379,7 +328,7 @@ input[type="submit"]:hover, button:hover {
 
 /*CONTACT*/
 #contact {
-  background-color:#1d1d1d;
+  background-color: #1d1d1d;
   height: auto;
   color: white;
   margin-bottom: 0px;
@@ -398,10 +347,12 @@ input[type="submit"]:hover, button:hover {
   		color: white;
   		cursor: pointer;
   		font-size: 17px;
-		align-content: center;
+  		align-content: center;
 	}
 
 }
+	
+
 
 
 valign-wrapper {
