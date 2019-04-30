@@ -26,6 +26,10 @@ img {
 	height: auto;
 }
 
+#atention {
+	color: red;
+}
+
 #content {
     margin-top: 50px;
     margin-left: auto;
